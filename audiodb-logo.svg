@@ -1,56 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
   <!-- Dark background -->
-  <rect width="512" height="512" fill="#0D1B2A"/>
+  <rect width="1024" height="1024" fill="#0D1B2A"/>
   
-  <!-- Waveform/Audio icon -->
-  <g id="audio-icon" transform="translate(256, 180)">
-    <!-- Central circle for database/record -->
-    <circle cx="0" cy="0" r="65" fill="none" stroke="#41EAD4" stroke-width="4"/>
-    <circle cx="0" cy="0" r="50" fill="none" stroke="#41EAD4" stroke-width="2"/>
-    <circle cx="0" cy="0" r="15" fill="#41EAD4"/>
+  <!-- Database cylinder with waveform -->
+  <g id="database-icon" transform="translate(512, 330)">
+    <!-- Top ellipse of cylinder -->
+    <ellipse cx="0" cy="-150" rx="300" ry="85" fill="#FFA726"/>
     
-    <!-- Waveform bars -->
-    <g id="waveform" transform="translate(-80, 0)">
-      <rect x="0" y="-25" width="8" height="50" fill="#B388FF" rx="4"/>
-      <rect x="15" y="-40" width="8" height="80" fill="#FF6E40" rx="4"/>
-      <rect x="30" y="-30" width="8" height="60" fill="#FFAB40" rx="4"/>
-      <rect x="45" y="-50" width="8" height="100" fill="#69F0AE" rx="4"/>
-      <rect x="60" y="-20" width="8" height="40" fill="#40C4FF" rx="4"/>
-    </g>
+    <!-- Cylinder body - top section -->
+    <rect x="-300" y="-150" width="600" height="150" fill="#FFA726"/>
     
-    <g id="waveform-right" transform="translate(80, 0) scale(-1, 1)">
-      <rect x="0" y="-25" width="8" height="50" fill="#B388FF" rx="4"/>
-      <rect x="15" y="-40" width="8" height="80" fill="#FF6E40" rx="4"/>
-      <rect x="30" y="-30" width="8" height="60" fill="#FFAB40" rx="4"/>
-      <rect x="45" y="-50" width="8" height="100" fill="#69F0AE" rx="4"/>
-      <rect x="60" y="-20" width="8" height="40" fill="#40C4FF" rx="4"/>
+    <!-- Middle ellipse (first divider) -->
+    <ellipse cx="0" cy="0" rx="300" ry="85" fill="#FFA726"/>
+    <ellipse cx="0" cy="0" rx="300" ry="85" fill="none" stroke="#0D1B2A" stroke-width="26"/>
+    
+    <!-- Cylinder body - middle section -->
+    <rect x="-300" y="0" width="600" height="150" fill="#FFA726"/>
+    
+    <!-- Bottom ellipse (second divider) -->
+    <ellipse cx="0" cy="150" rx="300" ry="85" fill="#FFA726"/>
+    <ellipse cx="0" cy="150" rx="300" ry="85" fill="none" stroke="#0D1B2A" stroke-width="26"/>
+    
+    <!-- Top ellipse stroke (drawn on top) -->
+    <ellipse cx="0" cy="-150" rx="300" ry="85" fill="none" stroke="#0D1B2A" stroke-width="26"/>
+    
+    <!-- Waveform pattern through middle -->
+    <g id="waveform" fill="none" stroke="#0D1B2A" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Heartbeat/pulse wave pattern - smooth curve -->
+      <path d="M -300 0 L -160 0 L -120 -110 L -70 140 L -10 -70 L 40 120 L 90 0 L 300 0"/>
     </g>
   </g>
   
   <!-- AudioDB text -->
-  <g id="text-group" transform="translate(256, 340)">
+  <g id="text-group">
     <text 
-      x="0" 
-      y="0" 
+      x="512" 
+      y="750" 
       font-family="Arial, Helvetica, sans-serif" 
-      font-size="56" 
+      font-size="160" 
       font-weight="bold" 
       fill="#FFFFFF" 
       text-anchor="middle"
-      letter-spacing="2">
-      Audio<tspan fill="#41EAD4">DB</tspan>
-    </text>
-    <text 
-      x="0" 
-      y="35" 
-      font-family="Arial, Helvetica, sans-serif" 
-      font-size="18" 
-      font-weight="300" 
-      fill="#8892B0" 
-      text-anchor="middle"
-      letter-spacing="4">
-      SOUND DATABASE
+      letter-spacing="0">
+      AudioDB
     </text>
   </g>
 </svg>
