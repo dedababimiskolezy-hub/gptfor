@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="256" height="256" fill="#0D1B2A"/>
+  
+  <!-- Database icon (cylindrical database shape) -->
+  <g id="database-icon" transform="translate(60, 40)">
+    <!-- Top ellipse -->
+    <ellipse cx="45" cy="20" rx="40" ry="15" fill="#4A90E2" stroke="#2E5C8A" stroke-width="2"/>
+    
+    <!-- Middle section -->
+    <rect x="5" y="20" width="80" height="60" fill="#4A90E2"/>
+    <line x1="5" y1="40" x2="85" y2="40" stroke="#2E5C8A" stroke-width="2"/>
+    <ellipse cx="45" cy="40" rx="40" ry="15" fill="none" stroke="#2E5C8A" stroke-width="2"/>
+    
+    <line x1="5" y1="60" x2="85" y2="60" stroke="#2E5C8A" stroke-width="2"/>
+    <ellipse cx="45" cy="60" rx="40" ry="15" fill="none" stroke="#2E5C8A" stroke-width="2"/>
+    
+    <!-- Left and right edges -->
+    <line x1="5" y1="20" x2="5" y2="80" stroke="#2E5C8A" stroke-width="2"/>
+    <line x1="85" y1="20" x2="85" y2="80" stroke="#2E5C8A" stroke-width="2"/>
+    
+    <!-- Bottom ellipse -->
+    <ellipse cx="45" cy="80" rx="40" ry="15" fill="#4A90E2" stroke="#2E5C8A" stroke-width="2"/>
+  </g>
+  
+  <!-- AudioDB text -->
+  <text x="128" y="165" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AudioDB</text>
+  
+  <!-- Accent line or underline (optional) -->
+  <line x1="50" y1="180" x2="206" y2="180" stroke="#4A90E2" stroke-width="3"/>
+</svg>
